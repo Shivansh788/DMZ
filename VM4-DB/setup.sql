@@ -1,0 +1,7 @@
+CREATE DATABASE ecommerce;
+
+CREATE USER 'appuser'@'192.168.2.10' IDENTIFIED BY 'password123';
+
+GRANT ALL PRIVILEGES ON ecommerce.* TO 'appuser'@'192.168.2.10';
+
+FLUSH PRIVILEGES;
